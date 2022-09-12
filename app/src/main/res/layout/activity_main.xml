@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/colorSecondary">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewhire"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/i_want_to_hire"
+                    android:textSize="40sp"
+                    android:textColor="@color/black"
+                    android:textStyle="italic"
+                    android:gravity="center"/>
+
+
+        <ImageView
+            android:id="@+id/imageButton"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="10dp"
+            android:scaleType="fitXY"
+            android:layout_marginTop="50dp"
+            app:srcCompat="@drawable/hire_image"
+            android:contentDescription="@string/hire" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewejob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/i_want_a_job"
+                    android:textColor="@color/black"
+                    android:textSize="40sp"
+                    android:textStyle="italic" />
+
+
+
+        <ImageView
+            android:id="@+id/name_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="10dp"
+            android:scaleType="fitXY"
+            android:layout_marginTop="50dp"
+            app:srcCompat="@drawable/job"
+            android:contentDescription="@string/hire" />
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="match_parent"
+            android:layout_height="286dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="400dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/job"
+            android:contentDescription="@string/job" />
+
+
+</LinearLayout>
